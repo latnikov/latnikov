@@ -6,7 +6,7 @@
 - 🌱 Learning JavaScript
 - 👯 I’m looking for study advices and code-reviews 
 - 🥅 2020 Goal: become a junior-frontend developer
-- 🐶 Fun fact: I have a dog named Frida
+- 🐶 DoberDad
 
 ### Connect with me:
 
