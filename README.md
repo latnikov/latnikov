@@ -6,7 +6,6 @@
 - 🌱 Learning JavaScript
 - 👯 I’m looking for study advices and code-reviews 
 - 🥅 2020 Goal: become a junior-frontend developer
-- 🐶 DoberDad
 
 ### Connect with me:
 
