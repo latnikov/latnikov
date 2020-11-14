@@ -5,7 +5,6 @@
 - 🔭 Currently I'm working in KODIUM
 - 🌱 Learning JavaScript
 - 👯 I’m looking for study advices and code-reviews 
-- 🥅 2020 Goal: become a junior-frontend developer
 
 ### Connect with me:
 
