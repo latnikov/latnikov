@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Привет, это Максим Латников</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Я методолог. Я строил обучение в «Университете Иннополис». Я с нуля делал «Хекслет Колледж» и был его старшим преподавателем. Я был методистом «Яндекс Учебника» и делал обучение сотрудников благотворительных фондов в «Среде Своих»." />
+  <meta property="og:title" content="Привет, меня зовут Максим Латников" />
+  <meta property="og:description" content="Я методолог. Я строил обучение в «Университете Иннополис». Я с нуля делал «Хекслет Колледж» и был его старшим преподавателем. Я был методистом «Яндекс Учебника» и делал обучение сотрудников благотворительных фондов в «Среде Своих»." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Google Fonts: IBM Plex Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Serif", ui-serif, Georgia, serif;
+      font-size: 24px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: #ffffff;
+      color: #111111;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0b0b0b; color: #eaeaea; }
+      a { color: #8ab4f8; }
+    }
+
+    .section { padding-top: 90px; padding-bottom: 90px; }
+    @media (max-width: 480px) { .section { padding-top: 15px; padding-bottom: 15px; } }
+
+    .container { max-width: 1200px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+
+    .col-8-center { width: 66.6667%; margin-left: auto; margin-right: auto; }
+    @media (max-width: 960px) { .col-8-center { width: 100%; } }
+
+    p { margin: 0 0 1.5rem; }
+    a { color: #0a84ff; text-underline-offset: 3px; text-decoration: none; border-bottom: 1px solid #1a3685; }
+    address { font-style: normal; }
+
+    .hint { position: relative; cursor: help; border-bottom: 1px dashed #1a3685; color: inherit; text-decoration: none; }
+
+    .tooltip-layer {
+      position: fixed;
+      left: 0; top: 0; transform: translate(-9999px, -9999px);
+      background: #111; color: #fff; border-radius: 0;
+      padding: 14px 18px; width: 360px; max-width: min(85vw, 560px);
+      line-height: 1.5; font-size: 20px; text-align: left;
+      box-shadow: none; z-index: 9999;
+      opacity: 0; transition: opacity .2s, transform .2s;
+      pointer-events: none;
+    }
+    .tooltip-layer::after { content: ""; position: absolute; width: 0; height: 0; border-style: solid; }
+    .tooltip-layer[data-pos="top"]::after {
+      bottom: -8px; left: 50%; transform: translateX(-50%);
+      border-width: 8px 8px 0 8px; border-color: #111 transparent transparent transparent;
+    }
+    .tooltip-layer[data-pos="bottom"]::after {
+      top: -8px; left: 50%; transform: translateX(-50%);
+      border-width: 0 8px 8px 8px; border-color: transparent transparent #111 transparent;
+    }
+    .tooltip-layer.show { opacity: 1; }
+
+    mark { background: rgba(245, 192, 0, 0.33); color: inherit; }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="col-8-center">
+        <p>Привет, меня зовут Максим Латников.</p>
+
+        <p>Я методолог. Я строил обучение в «<span class="hint" aria-label="Современный IT-кампус у столицы Татарстана. Обучение полностью на английском в сотрудничестве со Сбером и Яндексом. Я строил детские программы дополнительного образования на Python, JavaScript и Swift.">Университете Иннополис</span>». Я с нуля делал «<span class="hint" aria-label="Колледж с применением дистанционных технологий и офисами в пяти городах России. Я курировал преподавателей специальности ‘Информационные системы и программирование’ на базе платформы Hexlet, строил методику и аттестации.">Хекслет Колледж</span>» и был его старшим преподавателем. Я был методистом «<span class="hint" aria-label="Бесплатный образовательный онлайн-сервис для учеников начальной и средней школы. Я проектировал интерактивные задания по информатике, олимпиады и разработку игр.">Яндекс Учебника</span>» и делал обучение сотрудников благотворительных фондов в «<span class="hint" aria-label="Главный образовательный проект Москвы для сотрудников благотворительных фондов. Сделал 4 очных программы: ‘Коммуникации для НКО’, ‘Базовые управленческие навыки’, ‘Диджитал инструменты’ и ‘Волонтёрство как сервис’.">Среде Своих</span>». Сейчас я делаю методологию для клиентов платформы «Skill Cup» — например Булочным Ф.Вольчека, Кофеварим, ЁбиДоёби, Альфа-Банк, Билайн.</p>
+
+        <p>Я много раз сталкивался с одними и теми же проблемами. <mark>Мы хотим обучать персонал, но не знаем, как.</mark> Стажеры не знают что делать, надо постоянно всё напоминать. <mark>Мы страдаем от высокой текучки.</mark> Придумываем адаптацию новичков, а они всё равно уходят через две недели. <mark>Мы заставляем людей учиться.</mark> Наши лучшие сотрудники не могут передать свой опыт дальше. <mark>Мы учим бессистемно и стихийно, не знаем получится или нет.</mark> Используем устаревшие регламенты и тестирования, придуманные непонятно кем и непонятно в какой ситуации. В них часто нет смысла, ведь на практике всё иначе. <mark>Мы хотим проверять квалификацию персонала.</mark> Но боимся, что сложные экзамены и тесты разозлят и встревожат. <mark>Мы должны учить быстро, чтобы успевать за рынком.</mark> А делать качественно кажется слишком долго, слишком дорого и слишком непонятно. <mark>Мы не собираем цифры и не проводим исследования.</mark> Зачем изучать и анализировать сотрудников, когда они могут уйти через квартал. <mark>Мы не знаем как угодить новичкам, ведь не знаем как сейчас модно и нужно учить людей.</mark> Кажется, что перепробовали всё — офлайн с бумажными тетрадями, бизнес-тренерами и презентациями или онлайн-систему дистанционного обучения. <mark>Мы не можем найти опытных людей, которые помогут нам учить персонал.</mark></p>
+
+        <p>Моя работа уже 6 лет — обучать, стажировать и адаптировать сотрудников. Возможно, я и моя команда можем вам помочь. Это недорого и полезно.</p>
+
+        <address>
+          <p>Пишите. Можно на почту <a href="mailto:latnikou@gmail.com">latnikou@gmail.com</a> или в телеграм <a href="https://t.me/latnikov" rel="me noopener" target="_blank">@latnikov</a>.</p>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function(){
+      const layer = document.createElement('div');
+      layer.className = 'tooltip-layer';
+      layer.setAttribute('role','tooltip');
+      document.body.appendChild(layer);
+
+      let currentTarget = null;
+
+      function showTip(el){
+        const text = el.getAttribute('aria-label');
+        if(!text) return;
+        layer.textContent = text;
+        layer.classList.add('show');
+
+        layer.style.transform = 'translate(-9999px,-9999px)';
+        const rect = el.getBoundingClientRect();
+        const gap = 12;
+        const margin = 8;
+        const lw = Math.min(layer.offsetWidth || 360, Math.min(window.innerWidth * 0.85, 560));
+        const lh = layer.offsetHeight || 100;
+
+        let pos = 'top';
+        let x = rect.left + rect.width/2 - lw/2;
+        let y = rect.top - lh - gap;
+
+        if (y < margin){
+          pos = 'bottom';
+          y = rect.bottom + gap;
+        }
+        if (x < margin) x = margin;
+        if (x + lw > window.innerWidth - margin) x = window.innerWidth - margin - lw;
+
+        layer.dataset.pos = pos;
+        layer.style.width = lw + 'px';
+        layer.style.transform = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
+        currentTarget = el;
+      }
+
+      function hideTip(){
+        layer.classList.remove('show');
+        layer.style.transform = 'translate(-9999px,-9999px)';
+        currentTarget = null;
+      }
+
+      function attach(el){
+        el.addEventListener('mouseenter', ()=>showTip(el));
+        el.addEventListener('focus', ()=>showTip(el));
+        el.addEventListener('mouseleave', hideTip);
+        el.addEventListener('blur', hideTip);
+      }
+
+      document.querySelectorAll('.hint').forEach(attach);
+
+      window.addEventListener('scroll', ()=>{ if(currentTarget) showTip(currentTarget); }, {passive:true});
+      window.addEventListener('resize', ()=>{ if(currentTarget) showTip(currentTarget); });
+    })();
+  </script>
+</body>
+</html>
