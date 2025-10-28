@@ -85,82 +85,10 @@
   </style>
 </head>
 <body>
-  <section class="section">
-    <div class="container">
-      <div class="col-8-center">
-        <p>Привет, меня зовут Максим Латников.</p>
-
-        <p>Я методолог. Я строил обучение в «<span class="hint" aria-label="Современный IT-кампус у столицы Татарстана. Обучение полностью на английском в сотрудничестве со Сбером и Яндексом. Я строил детские программы дополнительного образования на Python, JavaScript и Swift.">Университете Иннополис</span>». Я с нуля делал «<span class="hint" aria-label="Колледж с применением дистанционных технологий и офисами в пяти городах России. Я курировал преподавателей специальности ‘Информационные системы и программирование’ на базе платформы Hexlet, строил методику и аттестации.">Хекслет Колледж</span>» и был его старшим преподавателем. Я был методистом «<span class="hint" aria-label="Бесплатный образовательный онлайн-сервис для учеников начальной и средней школы. Я проектировал интерактивные задания по информатике, олимпиады и разработку игр.">Яндекс Учебника</span>» и делал обучение сотрудников благотворительных фондов в «<span class="hint" aria-label="Главный образовательный проект Москвы для сотрудников благотворительных фондов. Сделал 4 очных программы: ‘Коммуникации для НКО’, ‘Базовые управленческие навыки’, ‘Диджитал инструменты’ и ‘Волонтёрство как сервис’.">Среде Своих</span>». Ещё я делал методологию для клиентов платформы «Skill Cup» — например Булочным Ф.Вольчека, Кофеварим, ЁбиДоёби, Альфа-Банк, Билайн.</p>
-
-        <p>Я много раз сталкивался с одними и теми же проблемами. <mark>Мы хотим обучать персонал, но не знаем, как.</mark> Стажеры не знают что делать, надо постоянно всё напоминать. <mark>Мы страдаем от высокой текучки.</mark> Придумываем адаптацию новичков, а они всё равно уходят через две недели. <mark>Мы заставляем людей учиться.</mark> Наши лучшие сотрудники не могут передать свой опыт дальше. <mark>Мы учим бессистемно и стихийно, не знаем получится или нет.</mark> Используем устаревшие регламенты и тестирования, придуманные непонятно кем и непонятно в какой ситуации. В них часто нет смысла, ведь на практике всё иначе. <mark>Мы хотим проверять квалификацию персонала.</mark> Но боимся, что сложные экзамены и тесты разозлят и встревожат. <mark>Мы должны учить быстро, чтобы успевать за рынком.</mark> А делать качественно кажется слишком долго, слишком дорого и слишком непонятно. <mark>Мы не собираем цифры и не проводим исследования.</mark> Зачем изучать и анализировать сотрудников, когда они могут уйти через квартал. <mark>Мы не знаем как угодить новичкам, ведь не знаем как сейчас модно и нужно учить людей.</mark> Кажется, что перепробовали всё — офлайн с бумажными тетрадями, бизнес-тренерами и презентациями или онлайн-систему дистанционного обучения. <mark>Мы не можем найти опытных людей, которые помогут нам учить персонал.</mark></p>
-
-        <p>Моя работа уже 6 лет — обучать, стажировать и адаптировать сотрудников. Возможно, я и моя команда можем вам помочь. Это недорого и полезно.</p>
-
-        <address>
-          <p>Пишите. Можно на почту <a href="mailto:latnikou@gmail.com">latnikou@gmail.com</a> или в телеграм <a href="https://t.me/latnikov" rel="me noopener" target="_blank">@latnikov</a>.</p>
-        </address>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    (function(){
-      const layer = document.createElement('div');
-      layer.className = 'tooltip-layer';
-      layer.setAttribute('role','tooltip');
-      document.body.appendChild(layer);
-
-      let currentTarget = null;
-
-      function showTip(el){
-        const text = el.getAttribute('aria-label');
-        if(!text) return;
-        layer.textContent = text;
-        layer.classList.add('show');
-
-        layer.style.transform = 'translate(-9999px,-9999px)';
-        const rect = el.getBoundingClientRect();
-        const gap = 12;
-        const margin = 8;
-        const lw = Math.min(layer.offsetWidth || 360, Math.min(window.innerWidth * 0.85, 560));
-        const lh = layer.offsetHeight || 100;
-
-        let pos = 'top';
-        let x = rect.left + rect.width/2 - lw/2;
-        let y = rect.top - lh - gap;
-
-        if (y < margin){
-          pos = 'bottom';
-          y = rect.bottom + gap;
-        }
-        if (x < margin) x = margin;
-        if (x + lw > window.innerWidth - margin) x = window.innerWidth - margin - lw;
-
-        layer.dataset.pos = pos;
-        layer.style.width = lw + 'px';
-        layer.style.transform = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
-        currentTarget = el;
-      }
-
-      function hideTip(){
-        layer.classList.remove('show');
-        layer.style.transform = 'translate(-9999px,-9999px)';
-        currentTarget = null;
-      }
-
-      function attach(el){
-        el.addEventListener('mouseenter', ()=>showTip(el));
-        el.addEventListener('focus', ()=>showTip(el));
-        el.addEventListener('mouseleave', hideTip);
-        el.addEventListener('blur', hideTip);
-      }
-
-      document.querySelectorAll('.hint').forEach(attach);
-
-      window.addEventListener('scroll', ()=>{ if(currentTarget) showTip(currentTarget); }, {passive:true});
-      window.addEventListener('resize', ()=>{ if(currentTarget) showTip(currentTarget); });
-    })();
-  </script>
+ <!-- MoyKlass widget begin -->
+   <div id="SiteWidgetMoyklass126186"></div> 
+<script src="https://app.moyklass.com/api/site/widget/?id=01voNDB8Lqi7d9NEgywD7jsqdnOwaysV5EqL" type="text/javascript" charset="UTF-8"></script>
+<!-- MoyKlass widget end --> 
 </body>
 </html>
 <!-- sup -->
